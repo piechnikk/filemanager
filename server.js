@@ -47,7 +47,7 @@ app.post('/handleUpload', function (req, res) {
             filesTab.push({ id: id, name: files.imagetoupload.name, path: files.imagetoupload.path, size: files.imagetoupload.size, type: files.imagetoupload.type, savedate: new Date().getTime(), download: path })
             id++
         }
-        console.log(files.imagetoupload.path.split("\\"), filesTab)
+        console.log(files.imagetoupload.path[0].split("\\"), filesTab)
         res.redirect("/filemanager")
     })
 })
