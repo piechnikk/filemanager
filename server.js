@@ -38,16 +38,16 @@ app.post('/handleUpload', function (req, res) {
             for (let i = 0; i < files.imagetoupload.length; i++) {
                 var path = ""
                 for (let j = files.imagetoupload[i].path.split("/").length - 2; j < files.imagetoupload[i].path.split("/").length; j++) path += "/" + files.imagetoupload[i].path.split("/")[j]
-                filesTab.push({ id: id, name: files.imagetoupload[i].name, path: files.imagetoupload[i].path, size: files.imagetoupload[i].size, type: files.imagetoupload[i].type, savedate: new Date().getTime(), download: path })
+                filesTab.push({ id: id, name: files.imagetoupload[i].name, path: files.imagetoupload[i].path, size: files.imagetoupload[i].size, type: files.imagetoupload[i].type, savedate: new Date().getTime(), download: path, extension: files.imagetoupload[i].path.split(".")[1] })
                 id++
             }
         } else {
             var path = ""
             for (let j = files.imagetoupload.path.split("/").length - 2; j < files.imagetoupload.path.split("/").length; j++) path += "/" + files.imagetoupload.path.split("/")[j]
-            filesTab.push({ id: id, name: files.imagetoupload.name, path: files.imagetoupload.path, size: files.imagetoupload.size, type: files.imagetoupload.type, savedate: new Date().getTime(), download: path })
+            filesTab.push({ id: id, name: files.imagetoupload.name, path: files.imagetoupload.path, size: files.imagetoupload.size, type: files.imagetoupload.type, savedate: new Date().getTime(), download: path, extension: files.imagetoupload.path.split(".")[1] })
             id++
         }
-        console.log(files.imagetoupload[0].path.split("/"), filesTab)
+        console.log(filesTab);
         res.redirect("/filemanager")
     })
 })
