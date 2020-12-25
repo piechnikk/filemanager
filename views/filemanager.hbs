@@ -1,0 +1,23 @@
+<div id="navbar">
+    <div class="navItem">
+        <a href="/upload">upload</a>
+    </div>
+    <div class="navItem">
+        <a href="/filemanager">filemanager</a>
+    </div>
+    <div class="navItem">
+        <a href="/info">info</a>
+    </div>
+</div>
+<div id="content" class="flexRow">
+    <div id="left" class="flexColumn">
+        <h1>filemanager</h1>
+        <a href="/delAll"> usuń dane o plikach z tablicy</a>
+    </div>
+    <div id="right" class="flexColumn">
+        {{>header}}
+        {{#each filesTab}}
+        {{>row}}
+        {{/each}}
+    </div>
+</div>

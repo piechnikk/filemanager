@@ -1,0 +1,39 @@
+<div id="navbar">
+    <div class="navItem">
+        <a href="/upload">upload</a>
+    </div>
+    <div class="navItem">
+        <a href="/filemanager">filemanager</a>
+    </div>
+    <div class="navItem">
+        <a href="/info">info</a>
+    </div>
+</div>
+<div id="content" class="flexRow">
+    <div id="left" class="flexColumn">
+        <h1>file info</h1>
+    </div>
+    <div id="right" class="flexColumn">
+        {{#if id }}
+        <div class="iEl">
+            <span><span>id</span>:</span> {{id}}
+        </div>
+        <div class="iEl">
+            <span><span>name</span>:</span> {{name}}
+        </div>
+        <div class="iEl">
+            <span><span>path</span>:</span> {{path}}
+        </div>
+        <div class="iEl">
+            <span><span>size</span>:</span> {{size}}
+        </div>
+        <div class="iEl">
+            <span><span>type</span>:</span> {{type}}
+        </div>
+        <div class="iEl">
+            <span><span>savedate</span>:</span> {{savedate}}
+        </div>
+        {{else}}
+        {{/if}}
+    </div>
+</div>

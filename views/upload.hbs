@@ -1,0 +1,22 @@
+<div id="navbar">
+    <div class="navItem">
+        <a href="/upload">upload</a>
+    </div>
+    <div class="navItem">
+        <a href="/filemanager">filemanager</a>
+    </div>
+    <div class="navItem">
+        <a href="/info">info</a>
+    </div>
+</div>
+<div id="content" class="flexRow">
+    <div id="left" class="flexColumn">
+        <h1>multiupload</h1>
+    </div>
+    <div id="right" class="flexRow">
+        <form enctype="multipart/form-data" method="POST" action="/handleUpload">
+            <input type="file" required accept="*/*" name="imagetoupload" multiple>
+            <button type="submit">upload</button>
+        </form>
+    </div>
+</div>
