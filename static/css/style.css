@@ -103,3 +103,7 @@ body{
 .iEl>span>span{
     border-bottom: 1px solid blue;
 }
+
+.el > img{
+    height: 60px;
+}
