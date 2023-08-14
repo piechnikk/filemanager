@@ -15,7 +15,7 @@ This is a simple Node.js filemanager app built using JavaScript, Node.js, Expres
 
 Explore the [live demo](http://filemanager.piechnik.ct8.pl/) of the filemanager app.
 
-## Getting Started
+## Setup
 
 To get a copy of this project up and running on your local machine, follow these steps:
 
@@ -52,7 +52,7 @@ Open your preferred web browser and navigate to `http://localhost:3000` to acces
 
   ![info page](https://github.com/piechnikk/filemanager/assets/51060535/43f1de43-4db1-42f1-bb69-25cff6244f64)
 
-## Build With
+## Technologies
 
 <div>
     <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript"> 
